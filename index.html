@@ -15,8 +15,28 @@
     
 <img src="./rock.png">
 <img src="./1.png">
+<h1>文件列表</h1>
+<!-- <ul id="fileList"></ul>
 <script>
-    
-</script>
+  fetch('/listFiles')
+    .then(response => response.json())
+    .then(files => {
+      const ul = document.getElementById('fileList');
+      files.forEach(file => {
+        const li = document.createElement('li');
+        li.textContent = file;
+        ul.appendChild(li);
+      });
+    })
+    .catch(error => console.error('Error:', error));
+</script> -->
+
+<script src="./index.js"></script>
+
+
 </body>
 </html>
+
+
+
+
